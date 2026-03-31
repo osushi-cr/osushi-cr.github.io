@@ -83,10 +83,13 @@
       to { opacity: 1; transform: translateY(0) scale(1); }
     }
 
-    /* Sushi icon */
-    .sushi {
-      font-size: 56px;
-      line-height: 1;
+    /* Avatar */
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--orange);
       animation: sushiBounce 0.6s 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
     }
 
@@ -250,7 +253,7 @@
   <div class="floater">🍙</div>
 
   <div class="card">
-    <div class="sushi">🍣</div>
+    <img src="avatar.png" alt="お寿司" class="avatar">
     <div class="name">お寿司</div>
     <div class="handle">(@osushi_cr)</div>
     <div class="title">PM / Engineer / AI x Novel</div>
