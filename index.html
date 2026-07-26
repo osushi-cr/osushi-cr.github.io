@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お寿司 — PM / Engineer / AI x Novel</title>
-  <meta name="description" content="お寿司 (@osushi_cr) のデジタル名刺">
+  <title>お寿司 — AI Product Builder / PM / Engineer</title>
+  <meta name="description" content="AITuber・ゲーム・小説をつくる、お寿司 (@osushi_cr) のデジタル名刺">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍣</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,12 +116,46 @@
       animation: fadeUp 0.5s 0.5s ease both;
     }
 
-    .title {
-      font-size: 13px;
-      color: var(--text-sub);
-      margin-top: 10px;
-      letter-spacing: 0.5px;
+    .role {
+      margin-top: 14px;
       animation: fadeUp 0.5s 0.55s ease both;
+    }
+
+    .role-primary {
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .role-secondary {
+      margin-top: 4px;
+      color: var(--text-sub);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .fields {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 13px;
+      animation: fadeUp 0.5s 0.6s ease both;
+    }
+
+    .field {
+      padding: 5px 9px;
+      border: 1px solid rgba(255, 107, 53, .28);
+      border-radius: 999px;
+      background: var(--orange-light);
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .4px;
+      text-transform: uppercase;
     }
 
     @keyframes fadeUp {
@@ -136,7 +170,7 @@
       background: var(--orange);
       border-radius: 2px;
       margin: 20px auto;
-      animation: fadeUp 0.5s 0.6s ease both;
+      animation: fadeUp 0.5s 0.65s ease both;
     }
 
     /* Links */
@@ -162,9 +196,9 @@
       transition: all 0.25s ease;
       animation: fadeUp 0.5s ease both;
     }
-    .link:nth-child(1) { animation-delay: 0.65s; }
-    .link:nth-child(2) { animation-delay: 0.72s; }
-    .link:nth-child(3) { animation-delay: 0.79s; }
+    .link:nth-child(1) { animation-delay: 0.7s; }
+    .link:nth-child(2) { animation-delay: 0.77s; }
+    .link:nth-child(3) { animation-delay: 0.84s; }
 
     .link:hover {
       border-color: var(--orange);
@@ -207,7 +241,7 @@
     /* QR */
     .qr-section {
       margin-top: 24px;
-      animation: fadeUp 0.5s 0.9s ease both;
+      animation: fadeUp 0.5s 0.95s ease both;
     }
 
     .qr-label {
@@ -236,7 +270,7 @@
       margin-top: 20px;
       font-size: 11px;
       color: #ccc;
-      animation: fadeUp 0.5s 1s ease both;
+      animation: fadeUp 0.5s 1.05s ease both;
     }
 
     @media (max-width: 420px) {
@@ -256,7 +290,15 @@
     <img src="avatar.png" alt="お寿司" class="avatar">
     <div class="name">お寿司</div>
     <div class="handle">(@osushi_cr)</div>
-    <div class="title">PM / Engineer / AI x Novel</div>
+    <div class="role">
+      <div class="role-primary">AI Product Builder</div>
+      <div class="role-secondary">PM / Engineer</div>
+    </div>
+    <div class="fields" aria-label="制作領域">
+      <span class="field">AITuber</span>
+      <span class="field">Game</span>
+      <span class="field">Novel</span>
+    </div>
 
     <div class="divider"></div>
 
@@ -297,7 +339,7 @@
       <div id="qrcode"></div>
     </div>
 
-    <div class="footer">Built with Claude Code 🤖</div>
+    <div class="footer">Built with Claude Code &amp; Codex 🤖</div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
